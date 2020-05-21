@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+*{
+    margin:0;
+	padding:0;
+	border:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'VT323', monospace;
+    width: 100%;
+}
+p, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+ul, ol{
+    font-family: monospace;
+    font-size: 12px;
+}
+ul, ol{
+    line-height: 1.5em;
+}
+.logo-img {
+    float: left;
+    position: static;
+    vertical-align: middle;
+    background-color: #333;
+    width: auto;
+    height: 51px;
+}
+.nav-bar{
+    background-color: #333;
+    height: 51px;
+}
+.nav-bar nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-block;
+}
+.nav-bar nav ul li{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+}
+.nav-bar nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16.3px 16px;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover:not(.active) {
+    background-color: rgb(197, 2, 171);
+}
+.active {
+    background-color: #4CAF50;
+}
+.banner-text{
+    width: 100%;
+    position: absolute;
+    top: 48px;
+}
+.banner-text h1{
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    margin-top: 10%;
+}
+.animation-area{
+    background: linear-gradient(to left, #8942a8, #81140c);
+    width: 100%;
+    height: 67vh;
+}
+.box-area{
+    position: absolute;
+    top: 51px;
+    left: 0;
+    width: 100%;
+    height: 67.1%;
+    overflow: hidden;
+}
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+.box-area li:nth-child(1){
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 1.5s;
+}
+.box-area li:nth-child(4){
+    left: 46%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 2.5s;
+}
+.box-area li:nth-child(7){
+    left: 35%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+    animation-duration: 9s;
+}
+.box-area li:nth-child(8){
+    left: 57%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 1s;
+    animation-duration: 11s;
+}
+.box-area li:nth-child(9){
+    left: 30%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 7s;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    display:block;
+    cursor:pointer;
+    overflow:hidden;
+    background-color:#aaa;
+    text-align: center;
+}
+.column:hover img{
+    filter: blur(2px);
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.fadedbox {
+    background: linear-gradient(to left, #8942a8, #81140c);
+    position: absolute;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 430.14px;
+    height: 504.33px;
+}
+.column1 .fadedbox {
+    top: 76.8%;
+    left: 0.75%;
+    width: 32%;
+}
+.column2 .fadedbox {
+    top: 76.8%;
+    left: 34.1%;
+    width: 32%;
+}
+.column3 .fadedbox {
+    top: 76.8%;
+    left: 67.4%;
+    width: 32%;
+}
+.column1:hover .fadedbox, .column2:hover .fadedbox, .column3:hover .fadedbox { opacity: 0.8; }
+.column1  .text, .column2  .text, .column3 .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(400px);
+    -webkit-transform: translateY(400px);
+}
+.column1 .title, .column2 .title, .column3 .title {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+.column1:hover .title,
+.column1:focus .title,
+.column2:hover .title,
+.column2:focus .title,
+.column3:hover .title,
+.column3:focus .title {
+    opacity: 10;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px);
+}
+.first-p, .about-me-p, .about-page-p {
+    width: 100%;
+    height: 31.5em;
+}
+@media screen and (max-width: 600px) {
+    .column, .fadedbox {
+        width: 100%;
+    }
+}
+
+/* ABOUT-ME */
+.me-body{
+    background-color: #7db6fd;
+    width: 100%;
+}
+.banner-text-me{
+    width: 100%;
+    position: absolute;
+    top: 48px;
+}
+.banner-text-me h1{
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    margin-top: 8%;
+}
+.animation-area-me{
+    background-image: url("assets/about-me/technology-13.jpg");
+    width: 100%;
+    height: 55vh;
+    border-bottom: #b86207 dashed 1.5px;
+}
+.me-img {
+    border-top: #b86207 dashed 1.5px;
+    background-image: linear-gradient(#60138C, #7db6fd);
+}
+.my-photo{
+    position: static;
+    left: 50%;
+    width: 100%;
+    max-width: 554px;
+    height: 100%;
+    margin-left: -126px;
+    margin-right: auto;
+    display: inline-block;
+}
+.hello-text{
+    text-align: center;
+    margin-top: -27%;
+    margin-bottom: 16%;
+    margin-left: 26%;
+    margin-right: 20%;
+    font-size: 2em;
+}
+.backstory {
+    background-color: #c57b57;
+    border: dashed 5px #5e3408;
+    margin: 2em;
+    padding-bottom: 60px;
+}
+.backstory figure img {
+    width: 29%;
+    float: left;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+.back-head {
+    margin-left: 1em;
+}
+.backstory p {
+    font-size: 17px;
+    margin-left: 384px;
+}
+.who-inspires {
+    background-color: #82d173;
+    border: dotted 5px #5e3408;
+    margin: 2em;
+    padding-bottom: 131px;
+}
+.inspire-head {
+    margin-left: 1em;
+}
+.malena {
+    width: 15%;
+    float: right;
+    margin-right: 0.5em;
+    margin-top: -16px;
+}
+.inspire-content {
+    font-size: 17px;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.future-plans {
+    background-color: #a882dd;
+    border: #5e3408 groove 5px;
+    margin: 2em;
+}
+.future-head {
+    margin-left: 1em;
+}
+.future-content {
+    font-size: 17px;
+    margin: 15px;
+}
+footer {
+    text-align: center;
+    background-color: royalblue;
+    color: #fff;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* ABOUT PAGE */
+.about-p-body {
+    background-image: url("assets/about-page/orange-blue-nebula.jpg");
+    width: 100%;
+}
+.banner-text-about {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 8%;
+    background-image: radial-gradient(#0d3a57,#f89f21);
+}
+.banner-bg {
+    width: 100%;
+    height: 55vh;
+    margin-top: -11.5em;
+    margin-bottom: -0.5em;
+    padding-bottom: 17.5em;
+}
+.about-p-content {
+    background-image: linear-gradient(#0d3a57, transparent, #f89f21);
+    border: aliceblue;
+    border-radius: 49px;
+    margin-bottom: -1.2em;
+}
+.about-p-content p {
+    text-align: center;
+    font: 29px strong;
+    font-style: italic;
+    color: white;
+    margin: 20px;
+}
+.ap-content-head, .ap-content-head-2 {
+    font-size: 60px;
+    margin-left: 0.3em;
+}
+.form-div {
+    background-image: linear-gradient(45deg, transparent, #0f3e64, #f49c20, transparent);
+    padding-bottom: 1px;
+    border: 3px solid white;
+}
+form {
+    margin: 1em;
+}
+.contact legend{
+    font-size: 53px;
+    color: white;
+}
+.contact-N {
+    float: left;
+}
+.contact-E {
+    float: left;
+}
+.contact-N, .contact-E, .contact-L, .contact-S {
+    font-size: 35px;
+    font-weight: bold;
+}
+.contact input {
+    font-size: 25px;
+}
+.contact label {
+    margin-left: 1em;
+    color: white;
+}
+.buttons input {
+    font-size: 25px;
+    border-radius: 11px;
+    color: white;
+}
+.submit, .reset {
+    background-color: #135e9b;
+}
+.submit:hover, .reset:hover {
+    background-color: #f49c20;
+}
+
+/* DEATH STRANDING */
+.ds-body {
+    background-image: linear-gradient(#607b84, #2f3b41, #344650, black);
+    margin: 0;
+    width: 100%;
+}
+.ds-header {
+    background-image: url("assets/death-stranding/220px-Death_Stranding.jpg");
+    border-bottom: black dashed 5px;
+}
+.banner-text-ds {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+.banner-text-ds h1 {
+    padding-top: 115px;
+}
+.banner-ds {
+    width: 100%;
+    height: 55vh;
+    margin-top: -11.5em;
+    margin-bottom: -0.5em;
+    padding-bottom: 17.5em;
+}
+.game-logo {
+    margin: 1em;
+    border: black solid 2px;
+    float: left;
+}
+.post-title {
+    font-size: 127px;
+    border-bottom: 6px black solid;
+    margin-left: 232px;
+    margin-right: 16px;
+    background-color: gray;
+    border-top: 16px solid #4a5e65
+}
+.year {
+    font-size: 54px;
+    padding-top: 38px;
+    margin-left: 231px;
+    margin-right: 16px;
+    background-color: gray;
+}
+.game-devs {
+    font-size: 37px;
+    margin-left: 231px;
+    margin-right: 16px;
+    background-color: gray;
+}
+.game-cast {
+    font-size: 24px;
+}
+.awards {
+    font-size: 21px;
+    padding-bottom: 4.6px;
+    border-bottom: 2px solid black;
+}
+.game-cast, .awards {
+    margin-left: 231px;
+    margin-right: 16px;
+    background-color: gray;
+}
+.game-cast a, .awards a{
+    color: white;
+}
+.spoiler-alert h2 {
+    background-image: linear-gradient(45deg, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red, yellow, red,yellow, red, yellow, red);
+    font-size: 68px;
+}
+.game-story ol{
+    color: white;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 69px;
+}
+.game-story p , .best-practices p{
+    color: white;
+    text-align: justify;
+}
+.ds-body span {
+    font-weight: bold;
+}
+.vid {
+    float: right;
+    background-color: gray;
+    padding-left: 18px;
+    margin-right: 16px;
+    padding-bottom: 262px;
+    border-bottom: 1px solid black;
+}
+.vid h5 {
+    padding-right: 32px;
+}
+.written-story {
+    margin-left: 16px;
+    background-color: darkslategray;
+    border: 1px solid black;
+    margin-right: 372px;
+    padding-right: 13px;
+    padding-left: 10px;
+}
+.vid, .written-story {
+    height: 668px;
+}
+.game-story h4{
+    font-size: 69px;
+    color: white;
+    margin-right: 16px;
+    margin-left: 16px;
+    padding-left: 8px;
+    border: 1px solid black;
+    background-color: darkslategrey;
+}
+ul.practices{
+    list-style-image: url("assets/death-stranding/facebook-like-5-16.png");
+}
+.best-practices ul{
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 69px;
+}
+.best-practices {
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 1px solid black;
+}
+.best-practices h4{
+    font-size: 69px;
+    color: white;
+    padding-left: 8px;
+    border-bottom: 1px solid black;
+    background-color: rgb(63, 83, 92);
+}
+.practices-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(63, 83, 92);
+}
+.right-pic {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: black 2px solid;
+}
+.left-pic {
+    float: left;
+    border: 1px solid black;
+    margin-right: 12px;
+}
+/* sitemap */
+.sitemap {
+    background-color: gray;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid black;
+}
+.sitemap h3{
+    font-size: 28px;
+}
